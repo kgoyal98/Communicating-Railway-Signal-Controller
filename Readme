@@ -1,0 +1,18 @@
+A. VHDL Compilation
+
+Add all the files in a new ISE project, and then from the top module (top_level.vhd), run "Manage Configuration Project(iMPACT)" under "Configure Target Device".
+Then, default.xsvf file is generated.
+Then run the following commands in the terminal: 
+sudo ~/20140524/makestuff/apps/flcli/lin.x64/rel/flcli -v 1d50:602b:0002 -i 1443:0007
+sudo ~/20140524/makestuff/apps/flcli/lin.x64/rel/flcli -v 1d50:602b:0002 -p J:D0D2D3D4:default.xsvf
+sudo ~/20140524/makestuff/apps/flcli/lin.x64/rel/flcli -v 1d50:602b:0002 -e '' -b
+
+
+B. 
+
+
+
+C. Implementing the optional part.
+A python script is run in the background on the relay laptop, which listens on one port, and writes on the other, and vice versa.
+On the relay laptop, run the command : sudo python3 uart.py
+
